@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #eef5ff;
+}
+
+nav {
+  background-image: url("Rectangle 7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .nav-link {
+  color: white;
+  transition: transform 1s ease;
+}
+
+.nav .nav-link:hover {
+  background-color: #ffc436;
+  color: #191d88;
+  border-radius: 10px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  text-align: center;
+  color: #191d88;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  width: 100%;
+  font-weight: bold;
+  background-color: #191d88;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffc436;
+  border-color: #ffc436;
+  color: #191d88;
+}
