@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NemuBeasiswa</title>
+    <link rel="stylesheet" type="text/css" href="detailBeasiswa.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="infoBeasiswa/Logo.png" alt="Logo NemuBeasiswa">
+        </div>
+        <ul id="menuList">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Scholarship</a></li>
+            <li><a href="#">Favorite</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#"><i class="fa-regular fa-user" id="profile-icon"></i></a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    <div class="back-button">
+        <a><i class="fa-solid fa-arrow-left" style="color: #000000;"></i></a>
+        <span class="page-title">Detail Beasiswa</span>
+    </div>
+    <div class="content">
+        <div class="left-column">
+            <img src="infoBeasiswa\djarum.jpg" alt="Poster Beasiswa Djarum">
+        </div>
+        <div class="right-column">
+            <h2>BEASISWA DJARUM</h2>
+            <p>27 Maret - 30 Mei 2024</p>
+            <p>Sejak 1984, Djarum Foundation konsisten mendukung pendidikan di Indonesia melalui program Djarum Beasiswa Plus, yang menawarkan beasiswa setahun serta pelatihan soft skills seperti Nation Building, Character Building, dan Leadership Development kepada mahasiswa berprestasi. Para penerima, disebut Beswan Djarum, juga terlibat dalam Community Empowerment untuk mengaplikasikan keterampilan mereka dalam memecahkan masalah sosial. Dengan melibatkan lebih dari 13.397 mahasiswa dari 127 perguruan tinggi di seluruh Indonesia, program ini bertujuan menciptakan pemimpin masa depan yang cakap secara intelektual dan emosional.</p>
+            <div class="buttons">
+                <button class="favorite-btn">Simpan ke Favorit</button>
+                <button class="apply-btn">Daftar Beasiswa</button>
+            </div>
+        </div>
+    </div>
+    <div class="additional-info">
+        <h2>INFORMASI BEASISWA</h2>
+        <h3>SYARAT PENDAFTARAN</h3>
+        <ul>
+            <li>Mahasiswa S1/D4 semester IV</li>
+            <li>IPK minimum 3.00 pada semester III</li>
+            <li>Aktif berorganisasi di dalam atau luar kampus</li>
+            <li>Tidak sedang menerima beasiswa dari pihak lain</li>
+            <li>Kuliah di mitra Perguruan Tinggi Program Djarum Beasiswa Plus</li>
+        </ul>
+        <h3>BERKAS ADMINISTRASI PENDAFTARAN</h3>
+        <ul>
+            <li>Format file JPG atau PNG (maks. 500 KB)</li>
+            <li>Pas foto 4×6 berwarna memakai jas almamater</li>
+            <li>Kartu Tanda Mahasiswa</li>
+            <li>Kartu Tanda Penduduk</li>
+        </ul>
+        <h3>FORMAT FILE PDF</h3>
+        <ul>
+            <li>Transkrip Nilai dan IPK s/d semester III yang dilegalisir (maks. 1 MB)</li>
+            <li>Sertifikat aktif berorganisasi (maks. 1 MB)</li>
+            <li>Surat Keterangan dari kampus bahwa tidak sedang menerima beasiswa dari pihak lain (maks. 500 KB)</li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="infoBeasiswa/Logo.png" alt="Logo NemuBeasiswa" class="footer-logo">
+                <p>NemuBeasiswa sebagai sumber daya informasi yang terpusat, mudah diakses, dan komprehensif bagi para pencari beasiswa di seluruh Indonesia.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Details</h3>
+                <p>2/669-5 Sample Street,<br>
+                Gedangan, Sidoarjo,<br>
+                Jawa Timur, 62354<br>
+                Sample@gmail.com<br>
+                +62 8123 4567 8900</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if(menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = menuList.scrollHeight + "px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/eb2faca9d4.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
