@@ -1,0 +1,706 @@
+:root {
+    --yellow-color: #ffc436;
+    --grey-color: #d9d9d9;
+    --darkblue-color: #191d88;
+    --bluesky-color: #bad4f2;
+    --lightblue-color: #eef5ff;
+    --white-color: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Popins", sans-serif;
+    background-color: var(--lightblue-color);
+}
+
+/* header */
+
+.logo {
+    margin-top: 4vh;
+}
+
+/* buttons */
+/* .btn {
+    font-family: "Poppins";
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 1px solid #000000;
+    position: relative;
+    display: inline-flex;
+    padding: 11px 1.5px 11px 0;
+    width: 136px;
+    font-weight: 600;
+    font-size: 15px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+} */
+
+.btn.yellow {
+    background-color: var(--yellow-color);
+    color: #000000;
+    overflow-wrap: break-word;
+}
+
+.btn.transparent {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+/* Banner */
+.banner {
+    font-family: "Poppins";
+    overflow-wrap: break-word;
+    font-weight: 700;
+    display: flex;
+    padding: 7px 50px 20px 50px;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.line-wrap {
+    z-index: -10;
+    justify-content: flex;
+    box-sizing: border-box;
+    align-items: center;
+    width: fit-content;
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    transform: translate(-120px, 50px);
+}
+
+.background {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    transform: translate(70px, -400px);
+    height: 530px;
+}
+.image_1 {
+    height: fit-content;
+    display: flex;
+    transform: translate(-10px, 70px);
+}
+/* h1 {
+    font-family: "Poppins";
+    font-size: 50px;
+    line-height: 1.333;
+    margin-bottom: -2px;
+    margin-right: 50px;
+    flex-direction: row;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: fit-content;
+} */
+
+p {
+    margin: 10px 3px 0px 3px;
+    display: inline-block;
+    align-self: flex-start;
+    font-family: "Poppins", sans-serif;
+    font-size: 10 px;
+    line-height: 5 px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.card {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p.p1 {
+    padding-top: 120px;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+}
+
+/* main banner menu */
+.main-banner-menu {
+    font-family: "Poppins";
+    position: relative;
+    height: 100px;
+    display: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transform: translate(28px, 13px);
+}
+.main-banner-menu ul {
+    font-family: "Poppins";
+    background: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: -100px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 35px 20px 35px;
+    box-sizing: border-box;
+    list-style: none;
+    width: 1299px;
+}
+
+.main-banner-menu ul li .dropdown {
+    width: 344px;
+    height: 59px;
+    border-radius: 15px;
+    background: #d9d9d9;
+    position: relative;
+    margin-right: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 24.5px 10px 18px;
+    height: fit-content;
+    box-sizing: border-box;
+    display: inline-block;
+    align-self: flex-start;
+    font-family: "Poppins", sans-serif;
+    font-size: larger;
+    line-height: 50 px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.main-banner-menu ul li .input-field {
+    width: 344px;
+    height: 59px;
+    border-radius: 15px;
+    background: #d9d9d9;
+    position: relative;
+    margin-right: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 24.5px 10px 18px;
+    height: fit-content;
+    box-sizing: border-box;
+    display: inline-block;
+    align-self: flex-start;
+    font-family: "Poppins", sans-serif;
+    font-size: larger;
+    line-height: 50 px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.main-banner-menu ul li .btn.yellow {
+    font-size: larger;
+    padding: 10px 28px 10px 18px;
+    width: 344px;
+    height: 59px;
+}
+
+/* About Us */
+.main-about-us {
+    background-image: url("/front/assets/Vectors/Rectangle24.png");
+    padding: 16px 99px 30px 99px;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    line-height: 10 px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+    transform: translate(0px, -50px);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 56px;
+    width: 507px;
+    box-sizing: border-box;
+}
+
+.left h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transform: translate(-220px, 0px);
+}
+
+.right {
+    max-width: 400px;
+    text-align: left;
+    margin: auto;
+}
+.right p {
+    margin-top: 20px;
+    margin-right: -90px;
+    margin-left: -25px;
+    color: #ffffff;
+}
+
+/* Beasiswa */
+.main-beasiswa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.main-beasiswa > div {
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.main-beasiswa h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 28px;
+    font-family: "Poppins";
+    font-size: 32px;
+    line-height: 1.333;
+}
+
+.main-beasiswa .btn.yellow {
+    float: right;
+    margin-top: -80px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 242px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.main-beasiswa ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 5px;
+    margin-bottom: -50px;
+}
+
+.main-beasiswa ul li {
+    width: auto;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-beasiswa ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Berita */
+.berita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.berita__judul {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    background-color: #191d88;
+    height: fit-content;
+    width: 380px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: -50px;
+}
+
+.berita__container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px; /* Menambahkan jarak antar gambar */
+    margin-bottom: 70px;
+}
+
+.berita__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Sudut yang halus untuk kontainer biru */
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.berita__item img {
+    width: 302px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*tutorial*/
+.tutorial {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 50px;
+    margin-right: 80px;
+}
+
+.tutorial__section {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.tutorial__section h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+.tutorial__judul {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    background-color: #191d88;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tutorial__content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 20px 40px 20px 40px;
+    gap: 20px;
+}
+
+.tutorial__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 10px;
+    flex: 1;
+}
+
+.tutorial__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    margin: 10px;
+    flex: 1;
+}
+
+.tutorial__box {
+    display: flex;
+    align-items: center;
+    width: 506px;
+    height: 138px;
+    background-color: var(--bluesky-color); /* Light blue background */
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px 0px #1450a3;
+    padding: 19px;
+    position: relative;
+}
+
+.tutorial__icon {
+    flex-shrink: 0;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tutorial__text--right {
+    margin-left: 140px; /* Adjust based on image width */
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: calc(100% - 150px); /* Adjust based on image width */
+}
+
+.tutorial__text--right h3 {
+    margin-left: 20px;
+    color: #191d88;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    justify-content: start;
+    text-align: left;
+}
+
+.tutorial__chain {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.tutorial__chain img {
+    width: 10px;
+    height: 17px;
+}
+
+.btn--yellow {
+    display: block;
+    background-color: #ffd700;
+    color: #000;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.btn--yellow:hover {
+    background-color: #ffc107;
+}
+
+/* FAQ */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.faq-section {
+    padding: 20px;
+    background-image: url("/front/assets/Vectors/bg2.png");
+    color: #fff;
+    padding-left: 97px;
+}
+
+.faq-section h2 {
+    margin-bottom: 37px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.faq-content-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.faq-image {
+    flex: 1;
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.faq-image img {
+    width: 100%;
+    height: auto;
+}
+
+.faq-questions {
+    flex: 2;
+    max-width: 60%;
+    margin-top: -15px;
+}
+
+.faq-questions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq-questions li {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.dropdown {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 59px;
+    border-radius: 15px;
+    background: #d9d9d9;
+    position: relative;
+    padding: 10px 24.5px 10px 18px;
+    font-size: 15px;
+    line-height: 50 px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: -100px;
+    margin-bottom: 5px;
+}
+
+.faq-contact-box {
+    border-radius: 20px;
+    background: #d9d9d9;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    padding: 15px 31px 15px 31px;
+    width: 866px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    text-align: center;
+    justify-content: center;
+    margin: 15px 15px 14px 0px;
+    color: #000;
+    font-size: 20px;
+}
+
+.contact-action {
+    flex: 1;
+    text-align: right;
+}
+
+.a.btn.yellow {
+    display: inline-block;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.faq-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq-bottom h2 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.faq-bottom a {
+    width: 397px;
+    height: 87px;
+    border-radius: 15px;
+    background: #d9d9d9;
+    position: relative;
+    padding: 19px 76px 12px 76px;
+    background-color: var(--yellow-color);
+    margin-bottom: 50px;
+}
+
+.btn-yellow:hover {
+    background-color: #ffc300;
+}
+
+/*footer*/
+.footer {
+    font-family: "Poppins", sans-serif;
+    background-image: url("/front/assets/Vectors/b3.png");
+    padding: 50px 45px 20px 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--white-color);
+}
+
+.footer-information {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.footer-information p {
+    color: var(--white-color);
+    margin-top: -20px;
+}
+.footer-link h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+.footer-link ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: -35px;
+    margin-top: -10px;
+}
+.fo0ter-link ul li {
+    margin-bottom: 20px;
+}
+.footer-link a {
+    color: var(--white-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 0;
+}
+
+.footer-contact-details {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+.footer-contact-details img {
+    margin-right: 30px;
+}
+.footer-logo img {
+    max-width: 100%; /* Gambar logo agar tidak melebihi lebar konten */
+}
+
+.footer-contact-details ul {
+    list-style-type: none; /* Menghilangkan bullet pada daftar */
+    padding: 0; /* Menghapus padding bawaan dari daftar */
+}
+
+.footer-contact-details a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    text-align: center; /* Teks hak cipta menjadi rata tengah */
+    margin-top: 20px; /* Memberikan jarak dari konten di atasnya */
+}
+
+.footer-copyright img {
+    display: block; /* Agar gambar menjadi blok untuk mengatur margin */
+    margin: 20px 0px 20px 0px;
+}
+
+.footer-copyright h4 {
+    color: white;
+    font-size: 12px;
+    font-weight: 200px;
+    margin: 0;
+}
